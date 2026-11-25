@@ -586,11 +586,16 @@ def create_boxplot():
         line=dict(color=BLUE, width=1.7),
         fillcolor="rgba(217,83,91,0.16)",
     )
-    style_figure(fig, 390)
-    fig.update_xaxes(title="연도", categoryorder="array",
-                     categoryarray=[str(y) for y in range(years[0], years[1] + 1)])
-    fig.update_yaxes(title=f"자치구별 {metric_label} ({unit})", rangemode="tozero")
-    return fig
+    fig.update_xaxes(
+    title="연도",
+    type="category",
+    categoryorder="array",
+    categoryarray=[str(y) for y in range(years[0], years[1] + 1)],
+    tickmode="array",
+    tickvals=[str(y) for y in range(years[0], years[1] + 1)],
+    tickangle=-45,
+    tickfont=dict(size=10),
+    )
 
 
 def create_hotspot_map(highlight_pair=None):
