@@ -530,7 +530,7 @@ with tab_map:
         st.info("현재 선택 조건에는 사고 다발지역 기록이 없습니다. 다른 연도나 자치구를 선택해 보세요.")
     else:
         st.plotly_chart(create_hotspot_map(),use_container_width=True,
-                        config={"displayModeBar":True,"scrollZoom":False})
+                config={"displayModeBar":True,"scrollZoom":True})
         st.caption("마커의 크기·색은 해당 기록의 사고건수에 비례합니다. 마우스를 올려 장소·연도·사고건수·사상자수를 확인하세요.")
         st.markdown("**선택 조건 내 사고 다발지역 기록 (사고건수 상위 10개)**")
         columns=["연도","자치구","장소","사고건수","사상자수"]
