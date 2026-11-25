@@ -596,7 +596,8 @@ def create_boxplot():
     tickangle=-45,
     tickfont=dict(size=10),
     )
-
+    fig.update_yaxes(title=f"자치구별 {metric_label} ({unit})", rangemode="tozero")
+    return fig
 
 def create_hotspot_map(highlight_pair=None):
     center = {
