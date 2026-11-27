@@ -1042,7 +1042,7 @@ with tab_map:
 with tab_change:
     section("04", "과거 사고 다발지역의 변화", "과거에는 사고 다발지역으로 선정됐지만 최근에는 다시 선정되지 않은 후보지를 찾아봅니다.")
     st.markdown(
-        '<div class="feature-intro"><strong>추가 분석 · 교수 피드백 반영</strong> — '
+        '<div class="feature-intro"><strong>추가 분석 </strong> — '
         '과거에 사고가 집중됐던 장소 중 최근 선정 기록이 없는 곳을 찾고, '
         '그 장소의 변화 원인을 조사할 출발점을 제공합니다. '
         '미선정은 사고 0건 또는 개선 효과를 뜻하지 않습니다.</div>',
